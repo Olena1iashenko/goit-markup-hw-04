@@ -111,7 +111,7 @@ img {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -260,10 +260,25 @@ img {
     margin-right: 16px;
 }
 
-.icon-socials {
+.icon-socials-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    color: #4d5ae5;
+    background-color: #4d5ae5;
+}
+
+.icon-socials {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+
+.icon-socials-circle:hover, 
+.icon-socials-circle:focus {
+    background-color: #404bbf;
 }
 
 /* Section 3 */
@@ -299,6 +314,7 @@ img {
     border-top: none;
 }
 
+/*  Section 4 */
 .our-team-title {
     color: #2e2f42;
     text-align: center;
@@ -313,9 +329,32 @@ img {
     margin-bottom: 72px;
 }
 
+/* Footer */
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+}
+
+.footer-flex {
+    display: flex;
+    padding: 100px 0 100px 156px; 
+}
+
+.logo-footer {
+    color: var(--IRIS, #4D5AE5);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-slogan {
+    margin-right: 120px;
+    width: 264px;
 }
 
 .studio-footer {
@@ -329,6 +368,27 @@ img {
     max-width: 264px;
 }
 
-footer > div > a {
-    margin-bottom: 16px;
+.name-socials-footer {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 #00000040;
+}
+
+.socials-thumb-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 208px;
+}
+
+.icon-socials {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.icon-socials-circle:hover,
+.icon-socials-circle:focus {
+    background-color: #31d0aa;
 }
