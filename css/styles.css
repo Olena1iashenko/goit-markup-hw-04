@@ -381,7 +381,8 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.appear-thumb:hover {
+.appear-thumb:hover, 
+.appear-thumb:focus {
     transform: translateY(0%);
 }
 
